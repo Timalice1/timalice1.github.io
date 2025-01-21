@@ -1,0 +1,72 @@
+body {
+    font-family: Space Mono, Consolas, "Courier New", monospace;
+    color: #151515;
+    font-size: 12px;
+}
+
+.logo {
+    max-width: 100px;
+    border-radius: 100%;
+}
+
+.wrapper {
+    display: flex;
+    position: relative;
+    margin: 0px auto;
+    max-width: 900px;
+    box-shadow: 0px 2px 4px #151515;
+}
+
+.sidebar-wrapper {
+    margin-right: 20px;
+    background: #f1f1f1;
+    min-height: 1000px;
+    box-shadow: 1px 2px 4px #1a1a1a;
+    width: 1000px;
+}
+
+.section {
+    border-bottom: #151515 solid 1px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.description {
+    padding: 10px;
+    text-align: center;
+}
+
+ul {
+    margin-top: 0;
+}
+
+ul.contacts {
+    list-style: none;
+    max-width: fit-content;
+    margin-inline: auto;
+    padding: 0;
+}
+
+li.contact {
+    margin: 0;
+    padding: 0;
+}
+
+li.education{
+    padding: 5px;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    margin-inline: auto;
+}
+
+a {
+    text-decoration: none;
+    color: #151515;
+}
+
+.highlight {
+    font-weight: bold;
+}
