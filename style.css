@@ -12,47 +12,35 @@ body {
     justify-content: center;
 }
 
-@media screen and (max-width: 500px) {
-    .logo
-    {
-        display: none;
-    }
-    ul.contacts {
-        margin-right: auto;
-    }
-}
-
 .wrapper {
     display: flex;
     margin: 0px auto;
-    max-width: 900px;
+    max-width: 1000px;
     box-shadow: 0px 2px 4px #151515;
     background: #fff;
+    min-width: 500px;
+}
+
+@media screen and (max-width: 750px) {
+    .wrapper
+    {
+        display: inline-block;
+    }
 }
 
 .sidebar-wrapper {
-    position: relative;
     margin-right: 20px;
     background: #f1f1f1;
-    min-height: 1000px;
+    min-height: 900px;
     box-shadow: 1px 2px 4px #1a1a1a;
-    max-width: fit-content;
-}
-
-.main-wrapper {
-    max-width: fit-content;
-    margin-inline: auto;
-}
-
-.main-wrapper .section {
-    display: inline-block;
+    min-width: 300px;
+    width: 850px;
 }
 
 .section {
-
     border-bottom: #151515 solid 1px;
     margin: 10px;
-    padding: 10px;
+    padding: 20px;
 }
 
 .description {
@@ -61,7 +49,7 @@ body {
 }
 
 ul {
-    margin-top: 0;
+    margin: 0;
 }
 
 ul.contacts {
@@ -93,4 +81,19 @@ a {
 
 .highlight {
     font-weight: bold;
+}
+
+@media screen and (max-width: 750px) {
+    .sidebar-wrapper
+    {
+        margin: 0;
+        padding: 0;
+        min-height: auto;
+        width: auto;
+    }
+
+    .logo
+    {
+        max-width: 50px;
+    }
 }
