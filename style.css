@@ -6,9 +6,20 @@ body {
 }
 
 .logo {
+    display: inline-block;
     max-width: 100px;
     border-radius: 100%;
     justify-content: center;
+}
+
+@media screen and (max-width: 500px) {
+    .logo
+    {
+        display: none;
+    }
+    ul.contacts {
+        margin-right: auto;
+    }
 }
 
 .wrapper {
@@ -26,7 +37,6 @@ body {
     min-height: 1000px;
     box-shadow: 1px 2px 4px #1a1a1a;
     max-width: fit-content;
-    width: auto;
 }
 
 .main-wrapper {
@@ -34,7 +44,12 @@ body {
     margin-inline: auto;
 }
 
+.main-wrapper .section {
+    display: inline-block;
+}
+
 .section {
+
     border-bottom: #151515 solid 1px;
     margin: 10px;
     padding: 10px;
