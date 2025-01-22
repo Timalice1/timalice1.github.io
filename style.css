@@ -72,6 +72,12 @@ li.education {
 a {
     text-decoration: none;
     color: #151515;
+    padding: 4px 0;
+}
+
+a:hover{
+    background: #e1e1e1;
+    border-radius: 4px;
 }
 
 .highlight {
@@ -92,28 +98,34 @@ a {
 h2
 {
     padding: 0;
+}
+
+
+.portfolio > ul
+{
+    padding: 0;
     margin: 0;
 }
 
-.project-description
+.text,
+.project-wrapper
 {
     display: flex;
     flex-direction: column;
     margin: 5px;
-    border-top: #151515 dashed 1px;
-    border-bottom: #151515 dashed 1px;
+    /* border-top: #151515 dashed 1px;
+    border-bottom: #151515 dashed 1px; */
+    padding: 10px 40px;
+    border-left: #151515 solid 2px;
+    background-color: #f5f5f5;
+
 }
 
-.project-description > .project-type
+.project-description
 {
-    padding: 4px 0;
+    padding: 10px 0;
 }
 
-.project-description > .project-links
-{
-    display: inline-block;
-    padding: 4px 0;
-}
 
 @media screen and (max-width: 750px) {
     .sidebar-wrapper
