@@ -3,6 +3,7 @@ body {
     color: #151515;
     font-size: 12px;
     background: #3f3f3f;
+    text-align: justify;
 }
 
 .logo {
@@ -15,9 +16,10 @@ body {
 .wrapper {
     display: flex;
     margin: 0px auto;
-    max-width: 1000px;
+    max-width: 900px;
     box-shadow: 0px 2px 4px #151515;
     background: #fff;
+    border-radius: 5px;
 }
 
 @media screen and (max-width: 750px) {
@@ -30,16 +32,16 @@ body {
 .sidebar-wrapper {
     margin-right: 20px;
     background: #f1f1f1;
-    min-height: 900px;
     box-shadow: 1px 2px 4px #1a1a1a;
-    min-width: 300px;
-    width: 850px;
+    min-width: 260px;
+    border-radius: 5px;
 }
 
 .section {
     border-bottom: #151515 solid 1px;
     margin: 10px;
     padding: 20px;
+    padding-top: 0;
 }
 
 .description {
@@ -58,19 +60,13 @@ ul.contacts {
     padding: 0;
 }
 
-li.contact {
-    margin: 0;
-    padding: 0;
-}
-
 li.education {
     padding: 5px;
 }
 
 .contact {
-    display: flex;
+    display: inline-flex;
     align-items: center;
-    margin-inline: auto;
 }
 
 a {
@@ -82,19 +78,50 @@ a {
     font-weight: bold;
 }
 
+.title
+{
+    display: flex;
+    align-items: center;
+}
+
+.icon{
+    width: 20px;
+    padding-right: 10px;
+}
+
 h2
 {
     padding: 0;
     margin: 0;
 }
 
+.project-description
+{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    border-top: #151515 dashed 1px;
+    border-bottom: #151515 dashed 1px;
+}
+
+.project-description > .project-type
+{
+    padding: 4px 0;
+}
+
+.project-description > .project-links
+{
+    display: inline-block;
+    padding: 4px 0;
+}
+
 @media screen and (max-width: 750px) {
     .sidebar-wrapper
     {
         margin: 0;
-        padding: 0;
         min-height: auto;
         width: auto;
+        border-radius: 0;
     }
 
     .logo
