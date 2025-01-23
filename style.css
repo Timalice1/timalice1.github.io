@@ -7,7 +7,7 @@ body {
 }
 
 .logo {
-    display: inline-block;
+    display: none;
     max-width: 100px;
     border-radius: 100%;
     justify-content: center;
